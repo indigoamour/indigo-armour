@@ -26,7 +26,7 @@ const FeaturedCategories = () => {
                 <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
                     Explore Our Categories
                 </h2>
-                <div className="flex items-center justify-center gap-6">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                     {[
                         {
                             title: "Handloom Clothing",

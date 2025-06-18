@@ -13,7 +13,7 @@ const landslide = localFont({
 
 const AnimatedNavbar = () => {
   return (
-    <div className='fixed top-0 left-0 flex w-full items-center justify-between px-16 py-4 z-[1000]'>
+    <div className='fixed top-0 left-0 flex w-full items-center justify-between px-5 md:px-16 py-4 z-[1000]'>
       <div className='flex items-center justify-center gap-3'>
         <img src="/icons/logo-icon.png" alt="INDIGO AMOUR" className='w-12' />
         <h3 className={`${landslide.className} text-white`}>Indigo<br /> Amour</h3>

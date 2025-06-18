@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
     <section
       className={`relative bg-[#e1e1e1] px-10 flex flex-col md:flex-row items-center justify-between ${font.className} pb-5`}
     >
-      <div className="flex items-start rounded-xl justify-center bg-[#005689] text-neutral-50 w-full min-h-[75vh] px-5 md:px-10 pb-10">
+      <div className="flex items-start rounded-xl justify-center bg-[#005689] text-neutral-50 w-full min-h-[75vh] px-5 md:px-10 py-10">
         <div className="w-full max-w-7xl">
           <h2 className="flex gap-3 md:gap-5 items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-10  md:mb-8">
             <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">

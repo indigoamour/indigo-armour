@@ -27,13 +27,13 @@ const HeroSection = () => {
 
   return (
     <div className="relative bg-[#1a1a1a] flex items-start justify-start flex-col h-[100vh]">
-      <div className="w-[97.9vw] h-full rounded-2xl m-2 overflow-hidden">
-        <video autoPlay muted loop className="opacity-25" src="/videos/weaving.mp4" />
+      <div className="md:w-[97.9vw] w-[96%] h-full rounded-2xl m-2 overflow-hidden">
+        <video autoPlay muted loop className="w-full h-full object-cover opacity-25" src="/videos/weaving.mp4" />
       </div>
 
       <h3
         ref={headingRef1}
-        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-5xl px-10 bottom-32 leading-loose`}
+        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-2xl md:text-5xl px-5 bottom-24 leading-loose`}
       >
         <span className="inline-block">Reviving</span>{" "}
         <span className="inline-block text-[#ED6370]">Traditions,</span>{" "}
@@ -41,7 +41,7 @@ const HeroSection = () => {
 
       <h3
         ref={headingRef2}
-        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-5xl px-10 bottom-12 leading-loose`}
+        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-2xl md:text-5xl px-5 bottom-12 leading-loose`}
       >
         <span className="inline-block">Weaving</span>{" "}
         <span className="inline-block text-green-500">Sustainability.</span>
