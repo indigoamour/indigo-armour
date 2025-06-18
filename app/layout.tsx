@@ -9,7 +9,7 @@ import ToastProvider from "@/providers/toast-provider";
 export const urbanist = Urbanist({ subsets: ["latin"] });
 export const anek = Anek_Devanagari({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Indigo Amour",
   description: "Shop your dyed clothes from Indigo Amour",
   icons: {
