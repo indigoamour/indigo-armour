@@ -1,6 +1,6 @@
-git commit -m "first commit"module.exports = {
+module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
   },
-}
+};
