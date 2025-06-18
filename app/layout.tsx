@@ -6,8 +6,15 @@ import Navbar from "@/components/navbar";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 
-export const urbanist = Urbanist({ subsets: ["latin"] });
-export const anek = Anek_Devanagari({ subsets: ["latin"] });
+export const urbanist = Urbanist({
+  subsets: ["latin"],
+  display: "swap", 
+});
+
+export const anek = Anek_Devanagari({
+  subsets: ["latin"],
+  display: "swap", 
+});
 
 const metadata: Metadata = {
   title: "Indigo Amour",
@@ -27,9 +34,9 @@ export default function RootLayout({
       <body className={urbanist.className}>
         <ModalProvider />
         <ToastProvider />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
