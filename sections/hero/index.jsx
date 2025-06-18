@@ -33,7 +33,7 @@ const HeroSection = () => {
 
       <h3
         ref={headingRef1}
-        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-2xl md:text-5xl px-5 bottom-24 leading-loose`}
+        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-2xl md:text-5xl px-5 bottom-24 md:bottom-32 leading-loose`}
       >
         <span className="inline-block">Reviving</span>{" "}
         <span className="inline-block text-[#ED6370]">Traditions,</span>{" "}
