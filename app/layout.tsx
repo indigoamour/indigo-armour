@@ -3,7 +3,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Urbanist, Anek_Devanagari } from "next/font/google";
 import Navbar from "@/components/navbar";
-import Head from "next/head";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 
@@ -13,6 +12,9 @@ export const anek = Anek_Devanagari({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Indigo Amour",
   description: "Shop your dyed clothes from Indigo Amour",
+  icons: {
+    icon: "/favicon.ico", // This replaces the need for <Head> favicon
+  },
 };
 
 export default function RootLayout({
@@ -22,18 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          rel="icon"
-          href="/favicon.ico"
-          type="image/x-icon"
-          sizes="16x16"
-        ></link>
-      </Head>
       <body className={urbanist.className}>
         <ModalProvider />
         <ToastProvider />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
