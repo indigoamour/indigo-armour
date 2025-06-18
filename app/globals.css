@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Landslide";
+    font-style: lighter;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/LandslideSample.ttf") format("truetype");
+  }
+}
+
+.swiper-button-prev::after {
+  color: #ec6673;
+}
+.swiper-button-next::after {
+  color: #ec6673;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ec6673 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-button-prev::after {
+  }
+  .swiper-button-next::after {
+    color: #ec6673;
+  }
+}
+
+.dots-6 {
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #ec6673;
+  box-shadow: 19px -19px 0 0px #ec6673, 38px -19px 0 0px #ec6673,
+    57px -19px 0 0px #ec6673, 19px 0 0 5px #ec6673, 38px 0 0 5px #ec6673,
+    57px 0 0 5px #ec6673, 19px 19px 0 0px #ec6673, 38px 19px 0 0px #ec6673,
+    57px 19px 0 0px #ec6673;
+  transform: translateX(-38px);
+  animation: d6 2s infinite linear;
+}
+
+@keyframes d6 {
+  12.5% {
+    box-shadow: 19px -19px 0 0px #ec6673, 38px -19px 0 0px #ec6673,
+      57px -19px 0 5px #05528a, 19px 0 0 5px #05528a, 38px 0 0 0px #ec6673,
+      57px 0 0 5px #05528a, 19px 19px 0 0px #ec6673, 38px 19px 0 0px #ec6673,
+      57px 19px 0 0px #ec6673;
+  }
+  25% {
+    box-shadow: 19px -19px 0 5px #05528a, 38px -19px 0 0px #ec6673,
+      57px -19px 0 5px #05528a, 19px 0 0 0px #ec6673, 38px 0 0 0px #ec6673,
+      57px 0 0 0px #ec6673, 19px 19px 0 0px #ec6673, 38px 19px 0 5px #05528a,
+      57px 19px 0 0px #ec6673;
+  }
+  50% {
+    box-shadow: 19px -19px 0 5px #05528a, 38px -19px 0 5px #05528a,
+      57px -19px 0 0px #ec6673, 19px 0 0 0px #ec6673, 38px 0 0 0px #ec6673,
+      57px 0 0 0px #ec6673, 19px 19px 0 0px #ec6673, 38px 19px 0 0px #ec6673,
+      57px 19px 0 5px #05528a;
+  }
+  62.5% {
+    box-shadow: 19px -19px 0 0px #ec6673, 38px -19px 0 0px #ec6673,
+      57px -19px 0 0px #ec6673, 19px 0 0 5px #05528a, 38px 0 0 0px #ec6673,
+      57px 0 0 0px #ec6673, 19px 19px 0 0px #ec6673, 38px 19px 0 5px #05528a,
+      57px 19px 0 5px #05528a;
+  }
+  75% {
+    box-shadow: 19px -19px 0 0px #ec6673, 38px -19px 0 5px #05528a,
+      57px -19px 0 0px #ec6673, 19px 0 0 0px #ec6673, 38px 0 0 0px #ec6673,
+      57px 0 0 5px #05528a, 19px 19px 0 0px #ec6673, 38px 19px 0 0px #ec6673,
+      57px 19px 0 5px #05528a;
+  }
+  87.5% {
+    box-shadow: 19px -19px 0 0px #ec6673, 38px -19px 0 5px #05528a,
+      57px -19px 0 0px #ec6673, 19px 0 0 0px #ec6673, 38px 0 0 5px #05528a,
+      57px 0 0 0px #ec6673, 19px 19px 0 5px #05528a, 38px 19px 0 0px #ec6673,
+      57px 19px 0 0px #ec6673;
+  }
+}
+.slider {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: #ddd;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
