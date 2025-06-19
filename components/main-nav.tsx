@@ -18,20 +18,22 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   }));
 
   return (
-    <div className="flex items-center uppercase space-x-4 lg:space-x-6">
-      {routes?.map((route) => (
-        <Link
-          href={route.href}
-          key={route.href}
-          className={cn(
-            "text-[14px] font-medium transition-colors hover:text-black",
-            route.active ? "text-[#EE6470]" : "text-neutral-800",
-            "relative w-fit md:block after:block after:content-[''] after:absolute after:h-[2px] after:bg-[#EE6470] hidden after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-          )}
-        >
-          {route.label}
-        </Link>
-      ))}
+    <div className="overflow-x-auto whitespace-nowrap px-2">
+      <div className="flex items-center uppercase space-x-4 lg:space-x-6 w-max">
+        {routes?.map((route) => (
+          <Link
+            href={route.href}
+            key={route.href}
+            className={cn(
+              "text-[14px] font-medium transition-colors hover:text-black",
+              route.active ? "text-[#EE6470]" : "text-neutral-800",
+              "relative w-fit md:block after:block after:content-[''] after:absolute after:h-[2px] after:bg-[#EE6470] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+            )}
+          >
+            {route.label}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
