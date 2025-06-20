@@ -59,9 +59,9 @@ const DeclineOfTradition = () => {
             ref={sectionRef}
             className="relative bg-[#e1e1e1] py-16 px-4 lg:px-20 text-gray-800"
         >
-            <img src="/images/sheep-grazing.png" alt="vector" className="absolute bottom-0 left-0 w-52" />
-            <img src="/images/thread.png" alt="vector" className="absolute top-12 right-10 w-24 -rotate-45 " />
-            <img src="/images/sui.png" alt="vector" className="absolute bottom-12 right-10 w-32 " />
+            <img src="/images/sheep-grazing.png" alt="vector" className="absolute bottom-0 left-0 w-52 hidden md:block" />
+            <img src="/images/thread.png" alt="vector" className="absolute top-4  hidden md:block md:top-12 right-2 md:right-10 w-16 md:w-24 -rotate-45 " />
+            <img src="/images/sui.png" alt="vector" className="absolute bottom-12 right-10 w-10 md:w-32 hidden md:block " />
             <div className="max-w-5xl mx-auto">
                 <h2 className="flex gap-3 md:gap-5 text-[#1a1a1a] items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-2  md:mb-8">
                     <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#1a1a1a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">

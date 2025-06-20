@@ -25,18 +25,18 @@ const OurStoryHeroSection = () => {
   }, []);
 
   return (
-    <div className="relative flex items-start justify-start flex-col h-[40vh] bg-[#1a1a1a] text-[#e1e1e1] ">
-      <div className="w-[98.9vw] h-full rounded-2xl m-2 overflow-hidden">
+    <div className="relative flex items-start justify-start flex-col md:h-[40vh] h-[30vh] bg-[#1a1a1a] text-[#e1e1e1] ">
+      <div className="w-[96vw] md:w-[98.9vw] h-[100%] rounded-2xl m-2 overflow-hidden">
         <video autoPlay muted loop className="opacity-25 w-full object-fill" src="/videos/sheep-grazing.mp4" />
       </div>
 
       <h3
         ref={headingRef1}
-        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-4xl top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 leading-loose`}
+        className={`hero-heading overflow-hidden absolute ${hero_font.className} text-xl md:text-4xl md:top-[50%] top-[60%] left-[40%] md:left-[50%] -translate-x-1/2 -translate-y-1/2 leading-loose`}
       >
-        <span className="inline-block">A Story of </span>{" "}
-        <span className="inline-block ">Sustainable Fashion</span>{" "}
-        <p className="text-sm font-light text-neutral-400 text-center">Reviving Heritage Through Gaddi Wool and Natural Dyes</p>
+        <span className="md:inline-block">A Story of </span>{" "}
+        <span className="md:inline-block ">Sustainable Fashion</span>{" "}
+        <p className="text-xs md:text-sm font-light text-neutral-400 text-center hidden md:block">Reviving Heritage Through Gaddi Wool and Natural Dyes</p>
       </h3>
 
     </div>

@@ -7,19 +7,19 @@ const artisans = [
     id: 1,
     name: "Chhatrari Artisans",
     quote: "Reviving Gaddi wool craftsmanship has brought back pride to our community.",
-    image: "/images/chhatrari.jpg", //
+    image: "/images/village-people-1.jpg", //
   },
   {
     id: 2,
     name: "Saho Valley Women",
     quote: "Natural dyeing techniques have helped us reconnect with our heritage.",
-    image: "/images/saho.jpg",
+    image: "/images/village-people-3.jpg",
   },
   {
     id: 3,
     name: "Local Weaver",
     quote: "These workshops have enabled us to create eco-friendly products with global appeal.",
-    image: "/images/weaver.jpg",
+    image: "/images/village-people-2.jpg",
   },
 ];
 
