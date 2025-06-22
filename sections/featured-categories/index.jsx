@@ -29,25 +29,39 @@ const FeaturedCategories = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                     {[
                         {
-                            title: "Handloom Clothing",
+                            title: "Womens Clothing",
                             href: "/",
                             description:
                                 "Discover handwoven clothes crafted with love and tradition.",
                             image: "/images/category-1.webp",
                         },
                         {
-                            title: "Eco-friendly Accessories",
+                            title: "Mens Clothing",
                             href: "/",
                             description:
-                                "Stylish accessories made with sustainable materials.",
-                            image: "/images/category-2.webp",
+                            "Fabrics dyed with 100% natural colors for a sustainable touch.",
+                            image: "/images/mens-wear.jpg",
                         },
                         {
-                            title: "Natural Dye Fabrics",
+                            title: "Kids Clothing",
                             href: "/",
                             description:
-                                "Fabrics dyed with 100% natural colors for a sustainable touch.",
-                            image: "/images/category-3.webp",
+                            "Fabrics dyed with 100% natural colors for a sustainable touch.",
+                            image: "/images/kidswear.jpg",
+                        },
+                        {
+                            title: "Eco-friendly Accessories",
+                            href: "",
+                            description:
+                                "Stylish accessories made with sustainable materials.",
+                            image: "/images/eco-freindly-accessories.webp",
+                        },
+                        {
+                            title: "Home",
+                            href: "",
+                            description:
+                                "Natural Dyed, Toxin Free, Artisanal and Handmade Home Furnishings.",
+                            image: "/images/home-decor.jpg",
                         },
                     ].map((category, index) => (
                         <Link

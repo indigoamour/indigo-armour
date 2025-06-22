@@ -3,10 +3,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Montserrat } from "next/font/google";
+import { useRouter } from "next/navigation";
 
 const font = Montserrat({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
 const AboutSection = () => {
+  const router = useRouter()
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
   const textRef = useRef(null);
@@ -71,7 +73,7 @@ const AboutSection = () => {
           handcrafted products while ensuring a positive impact on the planet.
           Each piece is a story of dedication, culture, and responsibility.
         </p>
-        <button className="hover:opacity-75 text-[#1a1a1a] hover:bg-[#1a1a1a] duration-300 hover:text-[#e1e1e1] text-md border border-[#1a1a1a] rounded-full p-0 px-3 py-1 m-0">
+        <button onClick={()=> router.push("/story")} className="hover:opacity-75 text-[#1a1a1a] hover:bg-[#1a1a1a] duration-300 hover:text-[#e1e1e1] text-md border border-[#1a1a1a] rounded-full p-0 px-3 py-1 m-0">
           Explore Our Story
         </button>
       </div>

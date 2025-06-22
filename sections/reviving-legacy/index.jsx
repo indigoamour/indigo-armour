@@ -35,7 +35,7 @@ const RevivingALegacy = () => {
         {
             title: "Workshops with Villagers",
             description: "Empowering local communities by reconnecting them with traditional Gaddi wool practices.",
-            image: "/images/villagers.jpg",
+            image: "/images/weaving-villager.webp",
         },
         {
             title: "Natural Dyeing Techniques",
@@ -45,7 +45,7 @@ const RevivingALegacy = () => {
         {
             title: "Sustainable Practices",
             description: "Promoting environmentally friendly methods that preserve Chamba's cultural and natural heritage.",
-            image: "/images/sustainable-practice.jpg",
+            image: "/images/sustainable-practice.png",
         },
     ];
 

@@ -5,21 +5,21 @@ import { gsap } from 'gsap';
 const artisans = [
   {
     id: 1,
-    name: "Chhatrari Artisans",
-    quote: "Reviving Gaddi wool craftsmanship has brought back pride to our community.",
+    name: "Saho Valley Artisans",
+    quote: "Gaddi Shepherd and Weaver - Natural dyeing techniques have helped us reconnect with our heritage.",
     image: "/images/village-people-1.jpg", //
   },
   {
     id: 2,
-    name: "Saho Valley Women",
-    quote: "Natural dyeing techniques have helped us reconnect with our heritage.",
-    image: "/images/village-people-3.jpg",
+    name: "Chhatrari Artisans",
+    quote: "Reviving Gaddi wool craftsmanship has brought back pride to our community.",
+    image: "/images/chhatrani-artisans.png",
   },
   {
     id: 3,
-    name: "Local Weaver",
-    quote: "These workshops have enabled us to create eco-friendly products with global appeal.",
-    image: "/images/village-people-2.jpg",
+    name: "Blanket Weaver",
+    quote: "Master artisans weavers from Saho valley and Chhatrari village make beautiful and sustainable woolen blankets of organic Gaddi sheep wool. The pristine valley inspired color blocks are our heritage art forms of Chamba, Himachal Pradesh.",
+    image: "/images/village-people-3.png",
   },
 ];
 
@@ -59,7 +59,7 @@ const EmpoweringLocalArtisans = () => {
               <img
                 src={artisan.image}
                 alt={artisan.name}
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                className="w-24 h-24 rounded-2xl mx-auto mb-4 object-cover"
               />
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {artisan.name}
