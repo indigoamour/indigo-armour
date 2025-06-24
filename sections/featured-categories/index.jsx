@@ -30,35 +30,35 @@ const FeaturedCategories = () => {
                     {[
                         {
                             title: "Womens Clothing",
-                            href: "/",
+                            href: "/category/681703eb7fe22823c892d1d6",
                             description:
                                 "Discover handwoven clothes crafted with love and tradition.",
                             image: "/images/category-1.webp",
                         },
                         {
                             title: "Mens Clothing",
-                            href: "/",
+                            href: "/category/685a30d6da56b15037f8308a",
                             description:
                             "Fabrics dyed with 100% natural colors for a sustainable touch.",
                             image: "/images/mens-wear.jpg",
                         },
                         {
                             title: "Kids Clothing",
-                            href: "/",
+                            href: "/category/685a30e22c636ae1f89d5ff5",
                             description:
                             "Fabrics dyed with 100% natural colors for a sustainable touch.",
                             image: "/images/kidswear.jpg",
                         },
                         {
                             title: "Eco-friendly Accessories",
-                            href: "",
+                            href: "/category/685a30fe2c636ae1f89d5ff9",
                             description:
                                 "Stylish accessories made with sustainable materials.",
                             image: "/images/eco-freindly-accessories.webp",
                         },
                         {
                             title: "Home",
-                            href: "",
+                            href: "/category/685a30f62c636ae1f89d5ff8",
                             description:
                                 "Natural Dyed, Toxin Free, Artisanal and Handmade Home Furnishings.",
                             image: "/images/home-decor.jpg",

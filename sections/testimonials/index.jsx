@@ -37,13 +37,11 @@ const Testimonials = () => {
             job: "Professor in Communication Design in New Delhi.",
             review: `"Thoughtfully designed jacket in a perfect mint green. Loved the design and the fit! Thank you Indigo Amour!"`,
           },
-          // {
-          //   img: "https://i.pravatar.cc/100?img=9",
-          //   name: "Sophia Williams",
-          //   job: "Entrepreneur",
-          //   review: `"An amazing experience! The team is very professional and the
-          //               results exceeded my expectations.`,
-          // },
+          {
+            img: "/images/customer-reveiw-3.jpg",
+            name: "Neha Sharma, Dubai",
+            review: `"Shop Indigo Amour for standout, handcrafted gear that feels as good as it looks. Super-soft, skin-friendly fabric. Flawless fit. Eye-catching design—all at a price that won’t make you blink.`,
+          },
         ].map((testimonial, i) => (
           <div
             key={testimonial.img}
@@ -62,7 +60,7 @@ const Testimonials = () => {
                   {testimonial.name}
                 </h3>
                 <p className="text-sm group-hover:text-neutral-200 text-gray-500">
-                  {testimonial.job}
+                  {testimonial?.job}
                 </p>
               </div>
             </div>
