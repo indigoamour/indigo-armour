@@ -40,7 +40,13 @@ const Info: React.FC<InfoProps> = async ({ data }) => {
       </div>
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6 ">
-        <div>{data?.description}</div>
+        <div>
+          {data?.description && data.description.split('\n').map((paragraph, index) => (
+            <p key={index} className="text-gray-600 mb-2 last:mb-0">
+              {paragraph.trim()}
+            </p>
+          ))}
+        </div>
         <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Size:</h3>
           <div className="flex">
@@ -77,7 +83,7 @@ const Info: React.FC<InfoProps> = async ({ data }) => {
             <div className="flex items-center justify-center gap-2" key={product.id}>
               <span className=" flex items-center justify-center gap-2">
                 <div className="h-9 w-9 overflow-hidden rounded-full border border-gray-600">
-                  <Image src={data?.images[0].url} width={100} height={100} />
+                  <Image src={data?.images[0].url} width={100} height={100} alt={data?.name} />
                 </div>
                 {product.color?.name}
               </span>

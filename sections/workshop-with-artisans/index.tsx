@@ -12,7 +12,7 @@ export default function WorkshopWithArtisans() {
                 <p className="text-lg text-gray-700">
                     Her work also includes collaborations with women weavers in Gujarat to design unique Kala Cotton fabrics, as well as research on traditional motifs in Bagru and Ajrakh block prints.
                 </p>
-               <img src="/images/about-1.jpg" alt="Sustainable practices"  className="md:w-[40vw] mx-auto w-auto h-[40vh] md:h-auto"  />
+               <img src="/images/about-1.JPG" alt="Sustainable practices"  className="md:w-[40vw] mx-auto w-auto h-[40vh] md:h-auto"  />
             </div>
         </section>
     );

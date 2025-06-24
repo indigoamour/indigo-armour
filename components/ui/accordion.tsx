@@ -36,7 +36,13 @@ const Accordion: React.FC<AccordionProps> = ({ title, content, icon }) => {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="p-4 text-neutral-600">{content}</div>
+          <div className="p-4 text-neutral-600">
+            {content && content.split('\n').map((paragraph, index) => (
+              <p key={index} className="mb-2 last:mb-0">
+                {paragraph.trim()}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

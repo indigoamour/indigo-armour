@@ -1,6 +1,42 @@
-import React from "react";
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const footer = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    if (!email) {
+      setMessage("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage("Thank you for subscribing!");
+        setEmail("");
+      } else {
+        setMessage(data.error || "An error occurred. Please try again.");
+      }
+    } catch (error) {
+      console.error("Newsletter error:", error);
+      setMessage("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <footer className="bg-gray-900">
       <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
@@ -100,9 +136,7 @@ const footer = () => {
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
-                      <path
-                        d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"
-                      ></path>{" "}
+                      <path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path>{" "}
                     </g>
                   </svg>
                 </a>
@@ -117,18 +151,18 @@ const footer = () => {
               <nav className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="/story"
                     >
                       Our Story
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
                     <a
                       className="text-white transition hover:text-white/75"
-                      href="/"
+                      href="https://www.instagram.com/seema_0_1"
                     >
                       Our Founder
                     </a>
@@ -152,27 +186,27 @@ const footer = () => {
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
                       href="/shop"
                     >
                       Shop
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="text-white transition hover:text-white/75"
-                      href="/shop"
+                      href="/about"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
             </div>
 
-            <div className="">
-              <div className="mx-auto ">
+            <div>
+              <div className="mx-auto">
                 <h2 className="text-xl font-bold mb-2 text-white">
                   Subscribe to Our Newsletter
                 </h2>
@@ -180,16 +214,29 @@ const footer = () => {
                   Stay updated with the latest news, trends, and special offers.
                   Don't miss out on our exciting updates.
                 </p>
-                <div className="mt-4 flex flex-col items-end overflow-hidden gap-3 max-w-xl mx-auto">
+                <form
+                  onSubmit={handleSubmit}
+                  className="mt-4 flex flex-col items-end overflow-hidden gap-3 max-w-xl mx-auto"
+                >
                   <input
                     type="email"
                     placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="w-full py-3.5 px-4 bg-gray-100 text-gray-800 text-base focus:outline-none"
                   />
-                  <button className="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base tracking-wide py-3.5 px-6 hover:shadow-md hover:transition-transform transition-transform hover:scale-105 focus:outline-none">
+                  <button
+                    type="submit"
+                    className="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base tracking-wide py-3.5 px-6 hover:shadow-md transition-transform hover:scale-105 focus:outline-none"
+                  >
                     Subscribe
                   </button>
-                </div>
+                  {message && (
+                    <p className="text-sm text-green-400 mt-2 w-full text-left">
+                      {message}
+                    </p>
+                  )}
+                </form>
               </div>
             </div>
           </div>

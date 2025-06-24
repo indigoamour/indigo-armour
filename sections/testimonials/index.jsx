@@ -26,37 +26,37 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl px-5">
         {[
           {
-            img: "https://i.pravatar.cc/100?img=7",
-            name: "Alex Johnson",
-            job: "Web Developer",
-            review: `"The service was exceptional! It helped streamline my workflow and
-            made everything so much easier."`,
+            img: "/images/customer-reveiw-1.jpg",
+            name: "Smita Vasant",
+            job: "Fashion Buyer based in LA, US.",
+            review: `"I’ve been a fan of Indigo Amour for quite a while - not only do I love that it’s natural, non-toxic, good for the environment and people, I also love the contemporary styling and cuts which are very important to me!I’ve been a fan of Indigo Amour for quite a while - not only do I love that it’s natural, non-toxic, good for the environment and people, I also love the contemporary styling and cuts which are very important to me!."`,
           },
           {
-            img: "https://i.pravatar.cc/100?img=8",
-            name: "Emma Davis",
-            job: "Graphic Designer",
-            review: `"I love how easy it is to use. I highly recommend it to anyone
-            looking for reliable solutions."`,
+            img: "/images/customer-reveiw-2.jpg",
+            name: "Jyotsna Raghunathan",
+            job: "Professor in Communication Design in New Delhi.",
+            review: `"Thoughtfully designed jacket in a perfect mint green. Loved the design and the fit! Thank you Indigo Amour!"`,
           },
-          {
-            img: "https://i.pravatar.cc/100?img=9",
-            name: "Sophia Williams",
-            job: "Entrepreneur",
-            review: `"An amazing experience! The team is very professional and the
-                        results exceeded my expectations.`,
-          },
+          // {
+          //   img: "https://i.pravatar.cc/100?img=9",
+          //   name: "Sophia Williams",
+          //   job: "Entrepreneur",
+          //   review: `"An amazing experience! The team is very professional and the
+          //               results exceeded my expectations.`,
+          // },
         ].map((testimonial, i) => (
           <div
             key={testimonial.img}
-            className="group cursor-pointer testimonial hover:bg-[#005689] hover:text-neutral-300 duration-200 transition-all bg-white shadow-lg rounded-lg p-6"
+            className="group cursor-pointer testimonial hover:bg-[#005689] hover:text-neutral-300 duration-200 transition-all bg-white shadow-lg rounded-lg p-6 "
           >
             <div className="flex items-center mb-4">
-              <img
-                className="w-12 h-12 rounded-full border"
-                src={testimonial.img}
-                alt="Customer 1"
-              />
+              <div className="w-16 h-16 rounded-full border overflow-hidden">
+                <img
+                  className="object-cover"
+                  src={testimonial.img}
+                  alt="Customer 1"
+                />
+              </div>
               <div className="ml-4">
                 <h3 className="font-semibold text-black group-hover:text-neutral-50 text-lg">
                   {testimonial.name}
