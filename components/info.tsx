@@ -41,7 +41,7 @@ const Info: React.FC<InfoProps> = async ({ data }) => {
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6 ">
         <div>
-          {data?.description && data.description.split('\n').map((paragraph, index) => (
+          {data?.description && data.description.split(/\n|\/n/).map((paragraph, index) => (
             <p key={index} className="text-gray-600 mb-2 last:mb-0">
               {paragraph.trim()}
             </p>
