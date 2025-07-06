@@ -41,11 +41,12 @@ const Info: React.FC<InfoProps> = async ({ data }) => {
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6 ">
         <div>
-          {data?.description && data.description.split(/\n|\/n/).map((paragraph, index) => (
-            <p key={index} className="text-gray-600 mb-2 last:mb-0">
-              {paragraph.trim()}
-            </p>
-          ))}
+          {data?.description &&
+            data.description.split(/\n|\/n/).map((paragraph, index) => (
+              <p key={index} className="text-gray-600 mb-2 last:mb-0">
+                {paragraph.trim()}
+              </p>
+            ))}
         </div>
         <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Size:</h3>
@@ -58,13 +59,22 @@ const Info: React.FC<InfoProps> = async ({ data }) => {
             />
           </div>
         </div>
-        <div className="flex items-center gap-x-4">
+        <div className="flex items-center gap-x-4 flex-wrap">
           <h3 className="font-semibold text-black">Colors:</h3>
-          <div>{data?.color?.name}</div>
-          <div
-            className="h-6 w-6 rounded-full border border-gray-600"
-            style={{ backgroundColor: data?.color?.value }}
-          ></div>
+          <div className="flex gap-2 items-center flex-wrap">
+            {data?.color?.value
+              ?.split(",")
+              .map((color) => color.trim())
+              .filter((c) => c)
+              .map((color, index) => (
+                <div
+                  key={index}
+                  title={color}
+                  className="h-6 w-6 rounded-full border border-gray-600"
+                  style={{ backgroundColor: color }}
+                />
+              ))}
+          </div>
         </div>
       </div>
       <div className="mt-8 flex gap-2">
@@ -80,10 +90,18 @@ const Info: React.FC<InfoProps> = async ({ data }) => {
             )}
             href={`/product/${product.id}`}
           >
-            <div className="flex items-center justify-center gap-2" key={product.id}>
+            <div
+              className="flex items-center justify-center gap-2"
+              key={product.id}
+            >
               <span className=" flex items-center justify-center gap-2">
                 <div className="h-9 w-9 overflow-hidden rounded-full border border-gray-600">
-                  <Image src={data?.images[0].url} width={100} height={100} alt={data?.name} />
+                  <Image
+                    src={data?.images[0].url}
+                    width={100}
+                    height={100}
+                    alt={data?.name}
+                  />
                 </div>
                 {product.color?.name}
               </span>
