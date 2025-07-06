@@ -1,13 +1,19 @@
-import { Billboard } from "@/types";
-
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/billboards`;
 
-const getBillboard = async (id: string): Promise<Billboard> => {
-  const res = await fetch(`${URL}/${id}`);
+const getAllBillboardImages = async (): Promise<string[]> => {
+  const res = await fetch(`${URL}`);
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch billboards");
+  }
 
   const data = await res.json();
+  
+  const allImages: string[] = data.flatMap((billboard: any) =>
+    billboard.images.map((img: any) => img.url)
+  );
 
-  return data;
+  return allImages;
 };
 
-export default getBillboard;
+export default getAllBillboardImages;

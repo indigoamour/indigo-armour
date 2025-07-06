@@ -33,7 +33,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ sliderData }) => {
                   height={315}
                   width={1702}
                   className="w-full"
-                  src={imageData.url}
+                  src={imageData}
                   alt="images"
                 />
               </div>
