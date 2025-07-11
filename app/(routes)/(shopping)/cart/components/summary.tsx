@@ -29,7 +29,7 @@ const Summary = () => {
     return total + Number(item.price);
   }, 0);
 
-  const shippingFee = totalPrice < 5000 ? 200 : 0;
+  const shippingFee = totalPrice < 5000 ? 300 : 0;
   const finalTotal = totalPrice + shippingFee;
 
   const storeId = "your-store-id-here"; // pass dynamically if needed
