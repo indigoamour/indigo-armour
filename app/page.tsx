@@ -9,6 +9,7 @@ import Footer from "@/components/footer";
 import Marquee from "@/components/ui/marquee";
 import AnimatedNavbar from "@/components/ui/animated-navbar/navbar";
 
+
 export default function Home() {
   return (
     <div className="relative overflow-hidden bg-[#1a1a1a] text-[#e1e1e1] ">

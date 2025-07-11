@@ -15,16 +15,6 @@ export const anek = Anek_Devanagari({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Indigo Amour",
-  description: "Shop your dyed clothes from Indigo Amour",
-  keywords: ["Indigo Amour", "dyed clothes", "handmade clothing", "fashion", "sustainable fashion"],
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
-
-
 export default function RootLayout({
   children,
 }: {
@@ -48,6 +38,16 @@ fbq('init', '1453290402356595');
 fbq('track', 'PageView');
           `}
         </Script>
+        <title>Indigo Amour</title>
+        <meta
+          name="description"
+          content="Shop your dyed clothes from Indigo Amour"
+        />
+        <meta
+          name="keywords"
+          content="Indigo Amour, dyed clothes, handmade clothing, fashion, sustainable fashion"
+        />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={urbanist.className}>
         {/* Noscript Fallback */}
