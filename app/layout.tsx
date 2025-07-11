@@ -1,8 +1,6 @@
-import Footer from "@/components/footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Urbanist, Anek_Devanagari } from "next/font/google";
-import Navbar from "@/components/navbar";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 import Script from "next/script";

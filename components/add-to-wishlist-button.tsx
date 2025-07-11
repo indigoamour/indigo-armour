@@ -19,7 +19,6 @@ const AddToWishlistButton = ({ data }: any) => {
     wishlist.removeItem(data.id);
   };
 
-  console.log("data", data);
 
   return (
     <Button
