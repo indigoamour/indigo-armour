@@ -73,7 +73,7 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
                       alt="Product image"
                       className={`
                         object-cover object-center transition-transform duration-200
-                        ${isZoomed ? "scale-150" : "scale-100"}
+                        ${isZoomed ? "scale-[15]" : "scale-100"}
                       `}
                       style={{
                         transformOrigin: `${mousePosition.x}% ${mousePosition.y}%`,

@@ -96,7 +96,7 @@ const footer = () => {
 
               <li>
                 <a
-                  href="/"
+                  href="https://x.com/Ajrakh2016"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-teal-500 transition hover:text-teal-500/75"

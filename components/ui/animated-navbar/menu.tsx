@@ -14,6 +14,7 @@ import {
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Blog", href: "https://indigoamour.blog" },
   { label: "Our Story", href: "/story" },
   { label: "Contact", href: "/contact" },
 ];
@@ -139,9 +140,8 @@ const Menu = () => {
       <div className="fixed top-4 right-4 z-50 flex items-center justify-center gap-x-5">
         <Link
           href={"/shop"}
-          className={`hover:opacity-75 text-[#e1e1e1] duration-300 hover:text-[#e1e1e1] text-md border border-[#e1e1e1] rounded-full p-0 px-2  md:px-3 py-1 m-0 ${
-            isActive && "hiddden"
-          } `}
+          className={`hover:opacity-75 text-[#e1e1e1] duration-300 hover:text-[#e1e1e1] text-md border border-[#e1e1e1] rounded-full p-0 px-2  md:px-3 py-1 m-0 ${isActive && "hiddden"
+            } `}
         >
           <span className="flex items-center justify-center gap-2">
             <ShoppingBag size={14} />
@@ -170,27 +170,54 @@ const Menu = () => {
         ref={menuRef}
         className="fixed top-0 right-0 w-[80vw] md:w-[30vw] px-6 py-16 bg-[#e1e1e1] h-screen flex flex-1 items-start justify-start flex-col space-y-6 z-40 transform translate-x-full"
       >
-        {menuItems.map((item, index) => (
-          <Link
-            key={item.label}
-            href={item.href}
-            ref={(el) => (itemRefs.current[index] = el)}
-            className="relative h-8 w-full border-b border-b-neutral-500 md:px-2 md:py-4 overflow-hidden cursor-pointer"
-          >
-            <h4 className="main-text flex w-full items-center justify-between text-xl text-neutral-700 uppercase absolute top-0 left-0">
-              {item.label}
-              <span className="-rotate-90">
-                <ArrowDownIcon />
-              </span>
-            </h4>
-            <h4 className="hover-text flex w-full items-center justify-between text-xl uppercase text-[#ED6370] absolute top-0 left-0">
-              {item.label}
-              <span className="-rotate-90">
-                <ArrowDownIcon />
-              </span>
-            </h4>
-          </Link>
-        ))}
+        {menuItems.map((item, index) => {
+          const isExternal = item.href.startsWith("http");
+
+          return isExternal ? (
+            <a
+              key={item.label}
+              href={item.href}
+              target="_blank"   // open in new tab
+              rel="noopener noreferrer"
+              ref={(el) => (itemRefs.current[index] = el)}
+              className="relative h-8 w-full border-b border-b-neutral-500 md:px-2 md:py-4 overflow-hidden cursor-pointer"
+            >
+              <h4 className="main-text flex w-full items-center justify-between text-xl text-neutral-700 uppercase absolute top-0 left-0">
+                {item.label}
+                <span className="-rotate-90">
+                  <ArrowDownIcon />
+                </span>
+              </h4>
+              <h4 className="hover-text flex w-full items-center justify-between text-xl uppercase text-[#ED6370] absolute top-0 left-0">
+                {item.label}
+                <span className="-rotate-90">
+                  <ArrowDownIcon />
+                </span>
+              </h4>
+            </a>
+          ) : (
+            <Link
+              key={item.label}
+              href={item.href}
+              ref={(el) => (itemRefs.current[index] = el)}
+              className="relative h-8 w-full border-b border-b-neutral-500 md:px-2 md:py-4 overflow-hidden cursor-pointer"
+            >
+              <h4 className="main-text flex w-full items-center justify-between text-xl text-neutral-700 uppercase absolute top-0 left-0">
+                {item.label}
+                <span className="-rotate-90">
+                  <ArrowDownIcon />
+                </span>
+              </h4>
+              <h4 className="hover-text flex w-full items-center justify-between text-xl uppercase text-[#ED6370] absolute top-0 left-0">
+                {item.label}
+                <span className="-rotate-90">
+                  <ArrowDownIcon />
+                </span>
+              </h4>
+            </Link>
+          );
+        })}
+
       </div>
     </>
   );
