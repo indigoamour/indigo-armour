@@ -10,6 +10,15 @@ interface GalleryProps {
   images: ImageType[];
 }
 
+// Helper to add Cloudinary transformations
+const getOptimizedUrl = (url: string) => {
+  // Add high-quality, modern format, and retina support
+  return url.replace(
+    "/upload/",
+    "/upload/q_auto:best,f_auto,dpr_auto,w_1200/"
+  );
+};
+
 const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
   const [selectedIndex, setSelectedIndex] = useState(
     images.length > 0 ? 0 : -1
@@ -69,11 +78,11 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
                       priority
                       height={600}
                       width={350}
-                      src={image.url}
+                      src={getOptimizedUrl(image.url)}
                       alt="Product image"
                       className={`
                         object-cover object-center transition-transform duration-200
-                        ${isZoomed ? "scale-[15]" : "scale-100"}
+                        ${isZoomed ? "scale-[6]" : "scale-100"}
                       `}
                       style={{
                         transformOrigin: `${mousePosition.x}% ${mousePosition.y}%`,
@@ -134,7 +143,7 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
                   `}
                   >
                     <Image
-                      src={image.url}
+                      src={getOptimizedUrl(image.url)}
                       alt="Thumbnail"
                       className="object-cover object-center"
                       fill
