@@ -74,10 +74,9 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
                       cursor: isZoomed ? "zoom-out" : "zoom-in",
                     }}
                   >
-                    <Image
-                      priority
-                      height={600}
-                      width={350}
+                    <img
+                      // height={600}
+                      // width={350}
                       src={getOptimizedUrl(image.url)}
                       alt="Product image"
                       className={`
