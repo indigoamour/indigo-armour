@@ -45,11 +45,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
       <div className="relative aspect-sqaure overflow-hidden w-full flex items-start justify-start bg-gray-100 top-0 left-0 h-72 sm:h-[350px] lg:h-[400px] xl:h-[400px] xl:w-[300px] ">
         <Image
           className="aspect-square object-cover transition-all duration-300 "
-          alt="Image"
+          alt={`${data.name} product photo`}
           src={currentImage}
           onMouseOver={() => setCurrentImage(data?.images?.[1]?.url)}
           onMouseOut={() => setCurrentImage(data?.images?.[0]?.url)}
           fill
+          loading="lazy"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="md:opacity-0 md:group-hover:opacity-100 transition absolute w-full px-6 bottom-5">

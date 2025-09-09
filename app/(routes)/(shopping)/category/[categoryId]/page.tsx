@@ -9,6 +9,7 @@ import NoResults from "@/components/ui/no-results";
 import ProductCard from "@/components/ui/product-card";
 import MobileFilters from "./components/mobile-filters";
 import PriceFilter from "./components/price-filter";
+import type { Metadata } from "next";
 
 interface CategoryProps {
   params: {
@@ -24,6 +25,21 @@ interface CategoryProps {
 
 export const revalidate = 0;
 
+export async function generateMetadata({ params }: { params: { categoryId: string } }): Promise<Metadata> {
+  try {
+    const category = await getCategory(params.categoryId);
+    const title = `${category?.name ?? "Category"} – Sustainable Fashion Collection`;
+    const description = `Explore ${category?.name ?? "our"} hand-dyed, sustainable fashion pieces crafted with natural dyes.`;
+    return { title, description };
+  } catch {
+    return {
+      title: "Category",
+      description: "Explore our hand-dyed, sustainable fashion pieces crafted with natural dyes.",
+      robots: { index: true, follow: true },
+    };
+  }
+}
+
 const Category: React.FC<CategoryProps> = async ({ params, searchParams }) => {
   const products = await getProducts({
     categoryId: params.categoryId,
@@ -34,12 +50,20 @@ const Category: React.FC<CategoryProps> = async ({ params, searchParams }) => {
   });
   const sizes = await getSizes();
   const colors = await getColors();
-  const category = await getCategory(params.categoryId);
+  let category: Awaited<ReturnType<typeof getCategory>> | null = null;
+  try {
+    category = await getCategory(params.categoryId);
+  } catch {
+    category = null;
+  }
 
   return (
     <div className="bg-white">
       {/* <Container> */}
-      <Billboard data={category.billboard} />
+      <h1 className="sr-only">{category?.name ?? "Category"} – Sustainable Fashion Collection</h1>
+      {category?.billboard?.images ? (
+        <Billboard data={category.billboard.images} />
+      ) : null}
       <div className="px-4 sm:px-6 lg:px-8 pb-24">
         <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">
           <MobileFilters sizes={sizes} colors={colors} />

@@ -4,11 +4,19 @@ import WorkshopWithArtisans from "@/sections/workshop-with-artisans";
 import AboutUsHeroSection from "@/sections/hero-about-us";
 import NaturalDyeingTechniques from "@/sections/natural-dyeing-technique";
 import SustainablePractices from "@/sections/sustainable-practices";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Indigo Amour",
+  description:
+    "Learn about Indigo Amour's commitment to sustainable fashion, traditional dyeing techniques, and ethical clothing production.",
+};
 
 export default function AboutUs() {
   return (
     <div className="relative overflow-hidden">
       <AnimatedNavbar />
+      <h1 className="sr-only">About Indigo Amour: Sustainable Fashion and Ethical Production</h1>
       <AboutUsHeroSection />
       <WorkshopWithArtisans />
       {/* <NaturalDyeingTechniques /> */}

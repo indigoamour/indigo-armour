@@ -9,7 +9,7 @@ const DeclineOfTradition = () => {
   const points = [
     {
       title: "Modernization and Synthetic Fibers",
-      imgSrc: "/images/villagers.jpg",
+      imgSrc: "/images/villagers.webp",
       description:
         "Mass-produced synthetic materials like acrylic and polyester have replaced natural wool due to their affordability and low maintenance. This shift has significantly reduced demand for traditional woolen products.",
     },
@@ -69,17 +69,17 @@ const DeclineOfTradition = () => {
       className="relative bg-[#e1e1e1] py-16 px-4 lg:px-20 text-gray-800"
     >
       <img
-        src="/images/sheep-grazing.png"
+        src="/images/sheep-grazing.webp"
         alt="vector"
         className="absolute bottom-0 left-0 w-52 hidden md:block"
       />
       <img
-        src="/images/thread.png"
+        src="/images/thread.webp"
         alt="vector"
         className="absolute top-4  hidden md:block md:top-12 right-2 md:right-10 w-16 md:w-24 -rotate-45 "
       />
       <img
-        src="/images/sui.png"
+        src="/images/sui.webp"
         alt="vector"
         className="absolute bottom-12 right-10 w-10 md:w-32 hidden md:block "
       />
@@ -104,7 +104,7 @@ const DeclineOfTradition = () => {
               key={index}
               className="timeline-item cursor-pointer bg-white border rounded-lg p-5 "
             >
-              <img src={point.imgSrc} className="mb-5 w-full h-[250px] object-cover" alt="" />
+              <img src={point.imgSrc} className="mb-5 w-full h-[250px] object-cover" alt="points" />
               <h3 className="text-lg group-hover: text-center font-semibold">
                 {point.title}
               </h3>

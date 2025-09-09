@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export interface ImageSliderProps {
-  sliderData: [];
+  sliderData: string[];
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ sliderData }) => {

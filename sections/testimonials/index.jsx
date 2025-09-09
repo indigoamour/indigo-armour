@@ -26,19 +26,19 @@ const Testimonials = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl px-5">
         {[
           {
-            img: "/images/customer-reveiw-1.jpg",
+            img: "/images/customer-reveiw-1.webp",
             name: "Smita Vasant",
             job: "Fashion Buyer based in LA, US.",
             review: `"I’ve been a fan of Indigo Amour for quite a while - not only do I love that it’s natural, non-toxic, good for the environment and people, I also love the contemporary styling and cuts which are very important to me!I’ve been a fan of Indigo Amour for quite a while - not only do I love that it’s natural, non-toxic, good for the environment and people, I also love the contemporary styling and cuts which are very important to me!."`,
           },
           {
-            img: "/images/customer-reveiw-2.jpg",
+            img: "/images/customer-reveiw-2.webp",
             name: "Jyotsna Raghunathan",
             job: "Professor in Communication Design in New Delhi.",
             review: `"Thoughtfully designed jacket in a perfect mint green. Loved the design and the fit! Thank you Indigo Amour!"`,
           },
           {
-            img: "/images/customer-reveiw-3.jpg",
+            img: "/images/customer-reveiw-3.webp",
             name: "Neha Sharma, Dubai",
             review: `"Shop Indigo Amour for standout, handcrafted gear that feels as good as it looks. Super-soft, skin-friendly fabric. Flawless fit. Eye-catching design—all at a price that won’t make you blink.`,
           },

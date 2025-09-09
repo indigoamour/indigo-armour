@@ -78,7 +78,9 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
                       // height={600}
                       // width={350}
                       src={getOptimizedUrl(image.url)}
-                      alt="Product image"
+                      alt={`Product image ${selectedIndex + 1}`}
+                      loading="lazy"
+                      decoding="async"
                       className={`
                         object-cover object-center transition-transform duration-200
                         ${isZoomed ? "scale-[6]" : "scale-100"}
@@ -143,7 +145,8 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
                   >
                     <Image
                       src={getOptimizedUrl(image.url)}
-                      alt="Thumbnail"
+                      alt={`Thumbnail ${index + 1}`}
+                      loading="lazy"
                       className="object-cover object-center"
                       fill
                       sizes="80px"

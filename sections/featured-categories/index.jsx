@@ -40,14 +40,14 @@ const FeaturedCategories = () => {
                             href: "/category/685a30d6da56b15037f8308a",
                             description:
                             "Fabrics dyed with 100% natural colors for a sustainable touch.",
-                            image: "/images/mens-wear.jpg",
+                            image: "/images/mens-wear.webp",
                         },
                         {
                             title: "Kids Clothing",
                             href: "/category/685a30e22c636ae1f89d5ff5",
                             description:
                             "Fabrics dyed with 100% natural colors for a sustainable touch.",
-                            image: "/images/kidswear.jpg",
+                            image: "/images/kidswear.webp",
                         },
                         {
                             title: "Eco-friendly Accessories",
@@ -61,7 +61,7 @@ const FeaturedCategories = () => {
                             href: "/category/685a30f62c636ae1f89d5ff8",
                             description:
                                 "Natural Dyed, Toxin Free, Artisanal and Handmade Home Furnishings.",
-                            image: "/images/home-decor.jpg",
+                            image: "/images/home-decor.webp",
                         },
                     ].map((category, index) => (
                         <Link

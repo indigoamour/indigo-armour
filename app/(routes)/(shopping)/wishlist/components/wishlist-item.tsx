@@ -25,7 +25,7 @@ const WishlistItem: React.FC<CartItemProps> = ({ data }) => {
         <Image
           fill
           src={data?.images[0].url}
-          alt=""
+          alt={data.name ?? "Product Image"}
           className="object-cover object-center"
         />
       </div>

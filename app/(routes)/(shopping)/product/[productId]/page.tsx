@@ -5,8 +5,41 @@ import getProducts from "@/actions/get-products";
 import ProductList from "@/components/product-list";
 import Container from "@/components/ui/container";
 import Loader from "@/components/ui/loader";
+import type { Metadata } from "next";
 
 export const revalidate = 0;
+
+export async function generateMetadata({ params }: { params: { productId: string } }): Promise<Metadata> {
+  const product = await getProduct(params.productId);
+  if (!product) {
+    return {
+      title: "Product not found",
+      description: "The requested product could not be found.",
+      robots: { index: false, follow: false },
+    };
+  }
+
+  const title = `${product.name} – ${product.collectionTitle ?? "Indigo Amour"}`;
+  const description = product.description?.slice(0, 155) ?? "Discover hand-dyed, sustainable fashion at Indigo Amour.";
+  const images = product.images?.map((img) => ({ url: img.url })) ?? [];
+
+  return {
+    title,
+    description,
+    // openGraph: {
+    //   title,
+    //   description,
+    //   type: "product",
+    //   images,
+    // },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: images as any,
+    },
+  };
+}
 
 const Gallery = dynamic(() => import("@/components/gallery"), {
   ssr: false,
@@ -50,6 +83,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
     <div className="bg-white w-full">
       <Container>
         <div className="px-4 py-10 sm:px-6 lg:px-8">
+          <h1 className="sr-only">{product.name}</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <div className="w-full">
               <Suspense

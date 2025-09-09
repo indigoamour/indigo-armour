@@ -15,6 +15,37 @@ export const anek = Anek_Devanagari({
   display: "swap",
 });
 
+export const metadata: Metadata = {
+  title: {
+    default: "Indigo Amour | Sustainable Hand-Dyed Clothing",
+    template: "%s | Indigo Amour",
+  },
+  description:
+    "Discover sustainable, hand-dyed fashion crafted with eco-friendly practices and artisan craftsmanship at Indigo Amour.",
+  metadataBase: new URL("https://www.indigoamour.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Indigo Amour | Sustainable Hand-Dyed Clothing",
+    description:
+      "Discover sustainable, hand-dyed fashion crafted with eco-friendly practices and artisan craftsmanship at Indigo Amour.",
+    type: "website",
+    url: "https://www.indigoamour.com/",
+    siteName: "Indigo Amour",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indigo Amour | Sustainable Hand-Dyed Clothing",
+    description:
+      "Discover sustainable, hand-dyed fashion crafted with eco-friendly practices and artisan craftsmanship at Indigo Amour.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -62,15 +93,7 @@ fbq('track', 'PageView');
           `}
         </Script>
 
-        <title>Indigo Amour</title>
-        <meta
-          name="description"
-          content="Shop your dyed clothes from Indigo Amour"
-        />
-        <meta
-          name="keywords"
-          content="Indigo Amour, dyed clothes, handmade clothing, fashion, sustainable fashion"
-        />
+        {/* Page titles and descriptions are defined via Next.js metadata API */}
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={urbanist.className}>

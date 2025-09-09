@@ -60,13 +60,13 @@ const OurMission = () => {
             </p>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[{ title: "Sustainability", content: "Reducing environmental impact through eco-friendly practices.", img: "/images/sustainability.jpg" }, { title: "Empowerment", content: "Supporting artisans and rural communities.", img: "/images/empowerment.jpg" }, { title: "Innovation", content: "Blending tradition with modern design and techniques.", img: "/images/innovation.jpg" }].map((card, i) => (
+                {[{ title: "Sustainability", content: "Reducing environmental impact through eco-friendly practices.", img: "/images/sustainability.webp" }, { title: "Empowerment", content: "Supporting artisans and rural communities.", img: "/images/empowerment.webp" }, { title: "Innovation", content: "Blending tradition with modern design and techniques.", img: "/images/innovation.webp" }].map((card, i) => (
                     <div
                         key={i}
                         ref={(el) => (valuesRef.current[i] = el)}
                         className="relative bg-[#1a1a1a] shadow-md rounded-lg p-6 overflow-hidden h-36"
                     >
-                        <img className="absolute opacity-40 -top-[50%] left-0 " src={card.img} alt="" />
+                        <img className="absolute opacity-40 -top-[50%] left-0 " src={card.img} alt="our misssion-sustainability" />
                         <h3 className="text-xl font-semibold ">{card.title}</h3>
                         <p className="mt-2">
                             {card.content}

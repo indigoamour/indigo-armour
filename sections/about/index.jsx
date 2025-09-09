@@ -46,7 +46,7 @@ const AboutSection = () => {
         className="w-full md:w-1/2 mb-8 md:mb-0 flex gap-5 justify-center"
       >
         <img
-          src="/images/who-we-are.png"
+          src="/images/who-we-are.webp"
           alt="Indigo Amour team"
           className="rounded-lg shadow-lg max-w-full h-auto"
         />

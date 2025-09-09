@@ -16,7 +16,8 @@ const Navbar = async () => {
         <Link className="flex lg:ml-0 gap-x-2" href="/">
           <div className=" flex flex-1 font-landslide items-end gap-3 justify-center">
             <img
-              src={"/icons/logo-icon.png"}
+              src={"/icons/logo-icon.webp"}
+              alt="logo"
               className="md:w-12 my-auto h-9 w-9 md:h-12"
             />
             <div className="md:text-[1.25rem] leading-6 md:leading-7 text-[1rem] mt-1">

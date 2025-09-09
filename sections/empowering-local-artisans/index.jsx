@@ -7,19 +7,19 @@ const artisans = [
     id: 1,
     name: "Saho Valley Artisans",
     quote: "Gaddi Shepherd and Weaver - Natural dyeing techniques have helped us reconnect with our heritage.",
-    image: "/images/village-people-1.jpg", //
+    image: "/images/village-people-1.webp", //
   },
   {
     id: 2,
     name: "Chhatrari Artisans",
     quote: "Reviving Gaddi wool craftsmanship has brought back pride to our community.",
-    image: "/images/chhatrani-artisans.png",
+    image: "/images/chhatrani-artisans.webp",
   },
   {
     id: 3,
     name: "Blanket Weaver",
     quote: "Master artisans weavers from Saho valley and Chhatrari village make beautiful and sustainable woolen blankets of organic Gaddi sheep wool. The pristine valley inspired color blocks are our heritage art forms of Chamba, Himachal Pradesh.",
-    image: "/images/village-people-3.png",
+    image: "/images/village-people-3.webp",
   },
 ];
 

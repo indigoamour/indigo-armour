@@ -8,12 +8,20 @@ import Testimonials from "@/sections/testimonials";
 import Footer from "@/components/footer";
 import Marquee from "@/components/ui/marquee";
 import AnimatedNavbar from "@/components/ui/animated-navbar/navbar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sustainable Hand-Dyed Clothing",
+  description:
+    "Discover sustainable, hand-dyed clothing at Indigo Amour. Unique fashion pieces created with eco-friendly practices and artisan craftsmanship.",
+};
 
 
 export default function Home() {
   return (
     <div className="relative overflow-hidden bg-[#1a1a1a] text-[#e1e1e1] ">
       <AnimatedNavbar />
+      <h1 className="sr-only">Sustainable Hand-Dyed Clothing | Indigo Amour</h1>
       <HeroSection />
       <section className="w-screen h-10 bg-[#ED6370] text-[#1a1a1a] flex py-1">
         <Marquee speed={50} direction="left">

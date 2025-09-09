@@ -43,7 +43,7 @@ const footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-teal-300 sm:justify-start gap-4 items-center">
-              <img src="/icons/logo-icon.png" className="w-20" />
+              <img src="/icons/logo-icon.webp" alt="logo" className="w-20" />
               <p>Indigo Amour</p>
             </div>
 
@@ -199,6 +199,14 @@ const footer = () => {
                       href="/about"
                     >
                       Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      href="/sitemap.xml"
+                    >
+                      Sitemap
                     </Link>
                   </li>
                 </ul>

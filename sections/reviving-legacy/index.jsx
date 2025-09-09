@@ -40,12 +40,12 @@ const RevivingALegacy = () => {
         {
             title: "Natural Dyeing Techniques",
             description: "Utilizing natural ingredients like walnut shells and turmeric to create vibrant, eco-friendly colors.",
-            image: "/images/natural-dyeing.jpg",
+            image: "/images/natural-dyeing.webp",
         },
         {
             title: "Sustainable Practices",
             description: "Promoting environmentally friendly methods that preserve Chamba's cultural and natural heritage.",
-            image: "/images/sustainable-practice.png",
+            image: "/images/sustainable-practice.webp",
         },
     ];
 

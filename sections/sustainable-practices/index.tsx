@@ -12,7 +12,7 @@ export default function SustainablePractices() {
                 <p className="text-lg text-gray-700">
                     From Khadi denim and naturally dyed scarves to handcrafted home décor, our offerings are perfect for those who care about planet-friendly fashion and craft revival.
                 </p>
-                <img src="/images/about-2.png" alt="Sustainable practices" className="md:w-[40vw] mx-auto w-auto h-[40vh] md:h-auto" />
+                <img src="/images/about-2.webp" alt="Sustainable practices" className="md:w-[40vw] mx-auto w-auto h-[40vh] md:h-auto" />
             </div>
         </section>
     );

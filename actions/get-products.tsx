@@ -26,12 +26,11 @@ const getProducts = async (query: Query): Promise<Product[]> => {
       upperPrice: query.upperPrice,
     },
   });
-  const res = await fetch(url, {
-    mode: "no-cors",
-  });
-
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) {
+    throw new Error("Failed to fetch products");
+  }
   const data = await res.json();
-
   return data?.products;
 };
 
