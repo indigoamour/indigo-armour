@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { MouseEventHandler, useState } from "react";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
-import { anek } from "@/app/layout";
+import { anek } from "@/lib/fonts";
 
 interface ProductCardProps {
   data: Product;

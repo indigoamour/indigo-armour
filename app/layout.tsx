@@ -1,19 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Urbanist, Anek_Devanagari } from "next/font/google";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 import Script from "next/script";
-
-export const urbanist = Urbanist({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-export const anek = Anek_Devanagari({
-  subsets: ["latin"],
-  display: "swap",
-});
+import { urbanist, anek } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: {

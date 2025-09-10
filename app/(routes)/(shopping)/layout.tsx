@@ -1,11 +1,8 @@
 import Footer from "@/components/footer";
-import { Urbanist, Anek_Devanagari } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Marquee from "@/components/ui/marquee";
 import type { Metadata } from "next";
-
-export const urbanist = Urbanist({ subsets: ["latin"] });
-export const anek = Anek_Devanagari({ subsets: ["latin"] });
+import { urbanist, anek } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Shop Sustainable Hand-Dyed Fashion",
