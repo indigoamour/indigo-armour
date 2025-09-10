@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   title: "About Indigo Amour",
   description:
     "Learn about Indigo Amour's commitment to sustainable fashion, traditional dyeing techniques, and ethical clothing production.",
+  keywords: [
+    "about indigo amour",
+    "sustainable fashion brand",
+    "traditional dyeing techniques",
+    "ethical clothing production",
+    "hand-dyed fashion",
+    "artisan craftsmanship",
+    "natural dyeing process",
+    "eco-friendly clothing",
+    "sustainable textiles",
+    "traditional crafts",
+    "indigo dyeing techniques",
+    "artisan workshops",
+    "sustainable practices",
+    "ethical fashion brand",
+    "handcrafted clothing",
+    "natural indigo",
+    "traditional textile arts",
+    "eco-conscious fashion",
+    "sustainable fashion mission",
+    "artisan collaboration"
+  ],
 };
 
 export default function AboutUs() {

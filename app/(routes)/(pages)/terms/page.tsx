@@ -1,5 +1,34 @@
 import React from "react";
-import Footer from "@/components/footer"
+import Footer from "@/components/footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions - Indigo Amour",
+  description:
+    "Read Indigo Amour's terms and conditions for purchasing sustainable hand-dyed fashion. Learn about our policies and user responsibilities.",
+  keywords: [
+    "terms and conditions",
+    "indigo amour terms",
+    "sustainable fashion terms",
+    "hand-dyed clothing terms",
+    "eco-friendly fashion terms",
+    "natural dye clothing terms",
+    "sustainable fashion policies",
+    "handcrafted clothing terms",
+    "indigo dyed clothing terms",
+    "artisan fashion terms",
+    "sustainable apparel terms",
+    "hand-dyed dresses terms",
+    "eco-friendly clothing terms",
+    "natural indigo clothing terms",
+    "sustainable fashion agreement",
+    "handcrafted fashion terms",
+    "traditional dyeing clothing terms",
+    "artisan made clothing terms",
+    "eco-conscious fashion terms",
+    "sustainable textile terms"
+  ],
+};
 
 const page = () => {
   return (

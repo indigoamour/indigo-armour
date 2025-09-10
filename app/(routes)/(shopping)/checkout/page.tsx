@@ -6,6 +6,35 @@ import UserDetailsForm from "@/components/user-details-form";
 import { getUserDetails } from "@/lib/user-details";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Checkout - Indigo Amour",
+  description:
+    "Complete your sustainable hand-dyed fashion purchase. Secure checkout for your eco-friendly clothing order.",
+  keywords: [
+    "checkout",
+    "sustainable fashion checkout",
+    "hand-dyed clothing checkout",
+    "eco-friendly fashion checkout",
+    "natural dye clothing checkout",
+    "sustainable fashion purchase",
+    "handcrafted clothing checkout",
+    "indigo dyed clothing checkout",
+    "artisan fashion checkout",
+    "sustainable apparel checkout",
+    "hand-dyed dresses checkout",
+    "eco-friendly clothing checkout",
+    "natural indigo clothing checkout",
+    "sustainable fashion order",
+    "handcrafted fashion checkout",
+    "traditional dyeing clothing checkout",
+    "artisan made clothing checkout",
+    "eco-conscious fashion checkout",
+    "sustainable textile checkout",
+    "hand-dyed fashion checkout"
+  ],
+};
 
 const CheckoutPage = () => {
   const [showUserForm, setShowUserForm] = useState(true);

@@ -9,6 +9,35 @@ import NoResults from "@/components/ui/no-results";
 import ProductCard from "@/components/ui/product-card";
 import MobileFilters from "./components/mobile-filters";
 import PriceFilter from "./components/price-filter";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Search Sustainable Hand-Dyed Fashion",
+  description:
+    "Search and discover our collection of hand-dyed, sustainable fashion pieces. Find the perfect eco-friendly clothing that matches your style.",
+  keywords: [
+    "search sustainable fashion",
+    "hand-dyed clothing search",
+    "eco-friendly fashion search",
+    "natural dye clothing search",
+    "sustainable fashion finder",
+    "handcrafted clothing search",
+    "indigo dyed clothing search",
+    "artisan fashion search",
+    "sustainable apparel search",
+    "hand-dyed dresses search",
+    "eco-friendly clothing search",
+    "natural indigo clothing search",
+    "sustainable fashion collection search",
+    "handcrafted fashion search",
+    "traditional dyeing clothing search",
+    "artisan made clothing search",
+    "eco-conscious fashion search",
+    "sustainable textile search",
+    "hand-dyed fashion search",
+    "natural dye fashion search"
+  ],
+};
 
 interface CategoryProps {
   params: {

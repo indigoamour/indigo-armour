@@ -30,11 +30,45 @@ export async function generateMetadata({ params }: { params: { categoryId: strin
     const category = await getCategory(params.categoryId);
     const title = `${category?.name ?? "Category"} – Sustainable Fashion Collection`;
     const description = `Explore ${category?.name ?? "our"} hand-dyed, sustainable fashion pieces crafted with natural dyes.`;
-    return { title, description };
+    const keywords = [
+      `${category?.name?.toLowerCase()} sustainable fashion`,
+      `${category?.name?.toLowerCase()} hand-dyed clothing`,
+      `${category?.name?.toLowerCase()} eco-friendly fashion`,
+      `${category?.name?.toLowerCase()} natural dye clothing`,
+      `${category?.name?.toLowerCase()} artisan clothing`,
+      `${category?.name?.toLowerCase()} sustainable textiles`,
+      `${category?.name?.toLowerCase()} handcrafted fashion`,
+      `${category?.name?.toLowerCase()} indigo dyed clothing`,
+      `${category?.name?.toLowerCase()} traditional dyeing`,
+      `${category?.name?.toLowerCase()} eco-conscious fashion`,
+      `${category?.name?.toLowerCase()} sustainable apparel`,
+      `${category?.name?.toLowerCase()} natural indigo clothing`,
+      `${category?.name?.toLowerCase()} artisan made clothing`,
+      `${category?.name?.toLowerCase()} hand-dyed fashion`,
+      `${category?.name?.toLowerCase()} sustainable style`,
+      `${category?.name?.toLowerCase()} eco-friendly apparel`,
+      `${category?.name?.toLowerCase()} traditional crafts`,
+      `${category?.name?.toLowerCase()} sustainable wardrobe`,
+      `${category?.name?.toLowerCase()} handcrafted clothing`,
+      `${category?.name?.toLowerCase()} natural dye fashion`
+    ];
+    return { title, description, keywords };
   } catch {
     return {
       title: "Category",
       description: "Explore our hand-dyed, sustainable fashion pieces crafted with natural dyes.",
+      keywords: [
+        "sustainable fashion",
+        "hand-dyed clothing",
+        "eco-friendly fashion",
+        "natural dye clothing",
+        "artisan clothing",
+        "sustainable textiles",
+        "handcrafted fashion",
+        "indigo dyed clothing",
+        "traditional dyeing",
+        "eco-conscious fashion"
+      ],
       robots: { index: true, follow: true },
     };
   }

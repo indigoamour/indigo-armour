@@ -8,6 +8,35 @@ import CartItem from "./components/cart-item";
 import Summary from "./components/summary";
 import UserDetailsDisplay from "@/components/user-details-display";
 import { useUserDetails } from "@/hooks/use-user-details";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shopping Cart - Indigo Amour",
+  description:
+    "Review your selected sustainable hand-dyed fashion items in your shopping cart. Complete your eco-friendly fashion purchase.",
+  keywords: [
+    "shopping cart",
+    "sustainable fashion cart",
+    "hand-dyed clothing cart",
+    "eco-friendly fashion cart",
+    "natural dye clothing cart",
+    "sustainable fashion checkout",
+    "handcrafted clothing cart",
+    "indigo dyed clothing cart",
+    "artisan fashion cart",
+    "sustainable apparel cart",
+    "hand-dyed dresses cart",
+    "eco-friendly clothing cart",
+    "natural indigo clothing cart",
+    "sustainable fashion purchase",
+    "handcrafted fashion cart",
+    "traditional dyeing clothing cart",
+    "artisan made clothing cart",
+    "eco-conscious fashion cart",
+    "sustainable textile cart",
+    "hand-dyed fashion cart"
+  ],
+};
 
 const CartPage = () => {
   const [isMounted, setIsMounted] = useState(false);

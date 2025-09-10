@@ -22,10 +22,34 @@ export async function generateMetadata({ params }: { params: { productId: string
   const title = `${product.name} – ${product.collectionTitle ?? "Indigo Amour"}`;
   const description = product.description?.slice(0, 155) ?? "Discover hand-dyed, sustainable fashion at Indigo Amour.";
   const images = product.images?.map((img) => ({ url: img.url })) ?? [];
+  const keywords = [
+    product.name.toLowerCase(),
+    `${product.name.toLowerCase()} sustainable fashion`,
+    `${product.name.toLowerCase()} hand-dyed clothing`,
+    `${product.name.toLowerCase()} eco-friendly fashion`,
+    `${product.name.toLowerCase()} natural dye clothing`,
+    `${product.name.toLowerCase()} artisan clothing`,
+    `${product.name.toLowerCase()} sustainable textiles`,
+    `${product.name.toLowerCase()} handcrafted fashion`,
+    `${product.name.toLowerCase()} indigo dyed clothing`,
+    `${product.name.toLowerCase()} traditional dyeing`,
+    `${product.name.toLowerCase()} eco-conscious fashion`,
+    `${product.name.toLowerCase()} sustainable apparel`,
+    `${product.name.toLowerCase()} natural indigo clothing`,
+    `${product.name.toLowerCase()} artisan made clothing`,
+    `${product.name.toLowerCase()} hand-dyed fashion`,
+    `${product.name.toLowerCase()} sustainable style`,
+    `${product.name.toLowerCase()} eco-friendly apparel`,
+    `${product.name.toLowerCase()} traditional crafts`,
+    `${product.name.toLowerCase()} sustainable wardrobe`,
+    `${product.name.toLowerCase()} handcrafted clothing`,
+    `${product.name.toLowerCase()} natural dye fashion`
+  ];
 
   return {
     title,
     description,
+    keywords,
     // openGraph: {
     //   title,
     //   description,

@@ -1,5 +1,34 @@
 import React from "react";
-import Footer from "@/components/footer"
+import Footer from "@/components/footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Indigo Amour",
+  description:
+    "Learn about Indigo Amour's privacy policy and how we protect your personal information when you shop for sustainable hand-dyed fashion.",
+  keywords: [
+    "privacy policy",
+    "indigo amour privacy",
+    "sustainable fashion privacy",
+    "hand-dyed clothing privacy",
+    "eco-friendly fashion privacy",
+    "natural dye clothing privacy",
+    "sustainable fashion data protection",
+    "handcrafted clothing privacy",
+    "indigo dyed clothing privacy",
+    "artisan fashion privacy",
+    "sustainable apparel privacy",
+    "hand-dyed dresses privacy",
+    "eco-friendly clothing privacy",
+    "natural indigo clothing privacy",
+    "sustainable fashion security",
+    "handcrafted fashion privacy",
+    "traditional dyeing clothing privacy",
+    "artisan made clothing privacy",
+    "eco-conscious fashion privacy",
+    "sustainable textile privacy"
+  ],
+};
 
 const page = () => {
   return (

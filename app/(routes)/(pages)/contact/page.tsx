@@ -1,5 +1,34 @@
 import React from "react";
-import Footer from "@/components/footer"
+import Footer from "@/components/footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Indigo Amour",
+  description:
+    "Get in touch with Indigo Amour for questions about our sustainable hand-dyed fashion, orders, or collaborations. We'd love to hear from you.",
+  keywords: [
+    "contact indigo amour",
+    "sustainable fashion contact",
+    "hand-dyed clothing contact",
+    "eco-friendly fashion contact",
+    "natural dye clothing contact",
+    "sustainable fashion support",
+    "handcrafted clothing contact",
+    "indigo dyed clothing contact",
+    "artisan fashion contact",
+    "sustainable apparel contact",
+    "hand-dyed dresses contact",
+    "eco-friendly clothing contact",
+    "natural indigo clothing contact",
+    "sustainable fashion help",
+    "handcrafted fashion contact",
+    "traditional dyeing clothing contact",
+    "artisan made clothing contact",
+    "eco-conscious fashion contact",
+    "sustainable textile contact",
+    "hand-dyed fashion contact"
+  ],
+};
 
 const page = () => {
   return (

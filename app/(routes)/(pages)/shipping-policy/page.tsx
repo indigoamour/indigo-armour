@@ -1,5 +1,34 @@
 import React from "react";
-import Footer from "@/components/footer"
+import Footer from "@/components/footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shipping Policy - Indigo Amour",
+  description:
+    "Learn about Indigo Amour's shipping policy for sustainable hand-dyed fashion. Free shipping on orders above ₹5000, fast delivery across India.",
+  keywords: [
+    "shipping policy",
+    "indigo amour shipping",
+    "sustainable fashion shipping",
+    "hand-dyed clothing shipping",
+    "eco-friendly fashion shipping",
+    "natural dye clothing shipping",
+    "sustainable fashion delivery",
+    "handcrafted clothing shipping",
+    "indigo dyed clothing shipping",
+    "artisan fashion shipping",
+    "sustainable apparel shipping",
+    "hand-dyed dresses shipping",
+    "eco-friendly clothing shipping",
+    "natural indigo clothing shipping",
+    "sustainable fashion free shipping",
+    "handcrafted fashion shipping",
+    "traditional dyeing clothing shipping",
+    "artisan made clothing shipping",
+    "eco-conscious fashion shipping",
+    "sustainable textile shipping"
+  ],
+};
 
 const page = () => {
   return (

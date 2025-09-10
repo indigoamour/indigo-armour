@@ -5,6 +5,35 @@ import NoResults from "@/components/ui/no-results";
 import { useEffect, useState } from "react";
 import WishlistItem from "./components/wishlist-item";
 import useWishlist from "@/hooks/use-wishlist";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wishlist - Indigo Amour",
+  description:
+    "Save your favorite sustainable hand-dyed fashion pieces to your wishlist. Keep track of eco-friendly clothing you love.",
+  keywords: [
+    "wishlist",
+    "sustainable fashion wishlist",
+    "hand-dyed clothing wishlist",
+    "eco-friendly fashion wishlist",
+    "natural dye clothing wishlist",
+    "sustainable fashion favorites",
+    "handcrafted clothing wishlist",
+    "indigo dyed clothing wishlist",
+    "artisan fashion wishlist",
+    "sustainable apparel wishlist",
+    "hand-dyed dresses wishlist",
+    "eco-friendly clothing wishlist",
+    "natural indigo clothing wishlist",
+    "sustainable fashion saved",
+    "handcrafted fashion wishlist",
+    "traditional dyeing clothing wishlist",
+    "artisan made clothing wishlist",
+    "eco-conscious fashion wishlist",
+    "sustainable textile wishlist",
+    "hand-dyed fashion wishlist"
+  ],
+};
 
 const CartPage = () => {
   const [isMounted, setIsMounted] = useState(false);

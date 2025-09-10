@@ -14,6 +14,28 @@ export const metadata: Metadata = {
   title: "Sustainable Hand-Dyed Clothing",
   description:
     "Discover sustainable, hand-dyed clothing at Indigo Amour. Unique fashion pieces created with eco-friendly practices and artisan craftsmanship.",
+  keywords: [
+    "sustainable fashion",
+    "hand-dyed clothing",
+    "eco-friendly fashion",
+    "natural dyes",
+    "artisan clothing",
+    "indigo dyeing",
+    "sustainable textiles",
+    "ethical fashion",
+    "handcrafted clothing",
+    "organic cotton",
+    "traditional dyeing",
+    "eco-conscious fashion",
+    "slow fashion",
+    "artisan made",
+    "natural indigo",
+    "sustainable style",
+    "hand-dyed dresses",
+    "eco-friendly apparel",
+    "traditional crafts",
+    "sustainable wardrobe"
+  ],
 };
 
 
