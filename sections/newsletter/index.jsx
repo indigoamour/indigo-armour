@@ -41,7 +41,7 @@ const Newsletter = () => {
   return (
     <section className="newsletter-section bg-[#e1e1e1] p-6 pt-8 shadow-md text-center">
       <h2 className="text-2xl text-[#1a1a1a] font-bold mb-4">
-        Stay Informed, Stay Ahead!
+        Stay Informed About Sustainable Fashion Trends
       </h2>
       <p className="text-[#1a1a1a] mb-6">
         Subscribe to our newsletter for the latest updates, tips, and insights

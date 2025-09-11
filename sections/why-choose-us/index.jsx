@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
         <div className="w-full max-w-7xl">
           <h2 className="flex gap-3 md:gap-5 items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-10  md:mb-8">
             <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-              Why Choose Us
+              Why Choose Indigo Amour for Sustainable Fashion
             </span>
           </h2>
 

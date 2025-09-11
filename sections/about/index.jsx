@@ -58,15 +58,17 @@ const AboutSection = () => {
       >
         <h2 className="flex gap-3 md:gap-5 text-[#1a1a1a] items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-10  md:mb-8">
           <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#1a1a1a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-            Who we are?
+            Who We Are at Indigo Amour
           </span>
         </h2>
+        <h3 className="text-xl font-semibold text-[#1a1a1a] mb-3">Our Heritage & Mission</h3>
         <p className="text-lg text-gray-600 leading-relaxed">
           At Indigo Amour, we are more than just a clothing brand—we are
           custodians of a legacy. Inspired by the rich traditions of Chamba,
           Himachal Pradesh, our mission is to blend heritage with innovation,
           crafting timeless pieces from Gaddi wool using sustainable practices.
         </p>
+        <h3 className="text-xl font-semibold text-[#1a1a1a] mb-3">Sustainable Fashion Commitment</h3>
         <p className="text-lg text-gray-600 leading-relaxed">
           With a commitment to supporting local artisans and eco-friendly
           production, Indigo Amour celebrates the intricate beauty of

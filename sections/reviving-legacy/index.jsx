@@ -58,11 +58,12 @@ const RevivingALegacy = () => {
                 {/* Section Title */}
                 <h2 className="flex gap-3 md:gap-5 text-[#1a1a1a] items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-2  md:mb-8">
                     <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#1a1a1a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-                        Reviving the Legacy
+                        Reviving the Legacy of Traditional Wool Craftsmanship
                     </span>
                 </h2>
 
                 {/* Content */}
+                <h3 className="text-xl font-semibold text-[#1a1a1a] mb-4 text-center">Our Approach to Heritage Revival</h3>
                 <p className="text-md content text-center max-w-4xl mx-auto">
                     Discover our efforts to revive the rich heritage of Gaddi wool
                     through innovative workshops, sustainable dyeing techniques, and eco-friendly practices.

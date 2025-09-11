@@ -44,15 +44,17 @@ const OurMission = () => {
             {/* Section Title */}
             <h2 className="flex gap-3 md:gap-5 text-[#1a1a1a] items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-1  md:mb-8">
                 <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#1a1a1a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-                    Our Mission
+                    Our Mission at Indigo Amour
                 </span>
             </h2>
+            <h3 className="text-xl font-semibold text-[#1a1a1a] mb-3">Preserving Heritage Through Innovation</h3>
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
                 At Indigo Amour, our mission is to preserve the rich heritage of
                 Chamba's wool craftsmanship while creating a sustainable and
                 eco-friendly future. We believe in the power of traditional practices
                 combined with modern innovation to make a positive impact.
             </p>
+            <h3 className="text-xl font-semibold text-[#1a1a1a] mb-3 mt-6">Supporting Artisans & Sustainable Development</h3>
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mt-4">
                 From supporting local artisans to promoting natural dyeing techniques
                 and ethical fashion, we aim to lead the way in preserving cultural

@@ -86,15 +86,16 @@ const DeclineOfTradition = () => {
       <div className="max-w-5xl mx-auto">
         <h2 className="flex gap-3 md:gap-5 text-[#1a1a1a] items-center justify-center text-center text-2xl md:text-3xl font-space-grotesk font-bold md:mt-2  md:mb-8">
           <span className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#1a1a1a] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-            The Decline of Tradition
+            The Decline of Traditional Wool Craftsmanship
           </span>
         </h2>
 
+        <h3 className="text-xl font-semibold text-[#1a1a1a] mb-4">Understanding the Challenges Facing Traditional Craftsmanship</h3>
         <p className="text-md mb-8 content">
           Chamba, known for its rich heritage of Gaddi wool production and
           weaving, has faced a steep decline in recent decades. The advent of
           synthetic alternatives, urban migration, and a shift in market
-          dynamics have eroded the once-thriving tradition. Here’s a timeline of
+          dynamics have eroded the once-thriving tradition. Here's a timeline of
           the challenges:
         </p>
 

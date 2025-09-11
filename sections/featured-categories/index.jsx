@@ -24,7 +24,7 @@ const FeaturedCategories = () => {
         <section className="bg-[#e1e1e1] flex items-center justify-center py-16">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
-                    Explore Our Categories
+                    Explore Our Sustainable Fashion Categories
                 </h2>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                     {[
